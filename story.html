@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Adventures - StoryCast</title>
+    <meta name="description" content="Watch Mountain Adventures - An accessible video story with captions and transcript">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <h1>StoryCast</h1>
+                </a>
+                <nav class="nav" aria-label="Main navigation">
+                    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <span class="nav__toggle-icon"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul class="nav__menu" id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="story.html" aria-current="page">Stories</a></li>
+                        <li><a href="about.html">About & Access</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="main">
+        <article class="story-detail" aria-labelledby="story-title">
+            <div class="container">
+                <header class="story-detail__header">
+                    <h2 id="story-title">Mountain Adventures</h2>
+                    <div class="story-detail__meta">
+                        <span class="story-detail__duration">Duration: 15 minutes</span>
+                        <span class="story-detail__type">Video Story</span>
+                        <span class="story-detail__date">Published: March 15, 2024</span>
+                    </div>
+                </header>
+
+                <section class="media-player" aria-labelledby="media-player-title">
+                    <h3 id="media-player-title" class="sr-only">Media Player</h3>
+                    <div class="media-player__container">
+                        <video class="media-player__video" controls width="100%">
+                            <source src="assets/media/mountain-adventures.mp4" type="video/mp4">
+                            <source src="assets/media/mountain-adventures.webm" type="video/webm">
+                            <track kind="captions" src="assets/transcripts/mountain-adventures.vtt" srclang="en" label="English" default>
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="media-player__controls">
+                            <button class="media-player__btn" data-action="play-pause">Play/Pause</button>
+                            <button class="media-player__btn" data-action="mute">Mute</button>
+                            <input type="range" class="media-player__volume" min="0" max="1" step="0.1" value="1">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="story-content" aria-labelledby="story-content-title">
+                    <h3 id="story-content-title">Story Description</h3>
+                    <p>Join us on an incredible journey through the Himalayan mountains, exploring breathtaking landscapes and meeting local communities along the way.</p>
+                    
+                    <details class="transcript" aria-labelledby="transcript-title">
+                        <summary id="transcript-title">
+                            <h4>Full Transcript</h4>
+                        </summary>
+                        <div class="transcript__content">
+                            <p><strong>[00:00]</strong> The sun rises over the snow-capped peaks of the Himalayas...</p>
+                            <p><strong>[00:30]</strong> We begin our ascent, the crisp mountain air filling our lungs...</p>
+                            <p><strong>[01:15]</strong> The trail winds through ancient pine forests, sunlight filtering through the canopy...</p>
+                            <!-- Full transcript content -->
+                        </div>
+                    </details>
+                </section>
+
+                <aside class="related-stories" aria-labelledby="related-stories-title">
+                    <h3 id="related-stories-title">Related Stories</h3>
+                    <div class="stories-grid">
+                        <!-- Related story cards would go here -->
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

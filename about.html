@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryCast - Home</title>
+    <meta name="description" content="StoryCast - Accessible audio and video storytelling platform">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <h1>StoryCast</h1>
+                </a>
+                <nav class="nav" aria-label="Main navigation">
+                    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <span class="nav__toggle-icon"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul class="nav__menu" id="nav-menu">
+                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="story.html">Stories</a></li>
+                        <li><a href="about.html">About & Access</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero__content">
+                    <h2 id="hero-title">Discover Captivating Stories</h2>
+                    <p class="hero__description">Experience accessible audio and video storytelling with full transcripts and captions.</p>
+                    <a href="story.html" class="btn btn--primary">Explore Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-stories" aria-labelledby="featured-stories-title">
+            <div class="container">
+                <h2 id="featured-stories-title">Featured Stories</h2>
+                <div class="stories-grid">
+                    <article class="story-card" data-type="video">
+                        <figure class="story-card__media">
+                            <img src="assets/media/featured-story-thumbnail.jpg" alt="Mountain landscape at sunrise" width="400" height="225">
+                            <figcaption class="sr-only">Video story: Mountain Adventures</figcaption>
+                        </figure>
+                        <div class="story-card__content">
+                            <h3 class="story-card__title">
+                                <a href="story.html?id=1">Mountain Adventures</a>
+                            </h3>
+                            <p class="story-card__description">A breathtaking journey through the Himalayas with stunning visuals and immersive audio.</p>
+                            <div class="story-card__meta">
+                                <span class="story-card__duration">15 min</span>
+                                <span class="story-card__type">Video</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="story-card" data-type="audio">
+                        <figure class="story-card__media">
+                            <div class="audio-placeholder">
+                                <span aria-hidden="true">🎵</span>
+                            </div>
+                            <figcaption class="sr-only">Audio story: Urban Echoes</figcaption>
+                        </figure>
+                        <div class="story-card__content">
+                            <h3 class="story-card__title">
+                                <a href="story.html?id=2">Urban Echoes</a>
+                            </h3>
+                            <p class="story-card__description">The sounds of the city come alive in this audio documentary about urban life.</p>
+                            <div class="story-card__meta">
+                                <span class="story-card__duration">22 min</span>
+                                <span class="story-card__type">Audio</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-stories" aria-labelledby="latest-stories-title">
+            <div class="container">
+                <h2 id="latest-stories-title">Latest Stories</h2>
+                <div class="stories-grid stories-grid--latest">
+                    <!-- More story cards would go here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>StoryCast</h3>
+                    <p>Accessible storytelling for everyone.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="story.html">Stories</a></li>
+                        <li><a href="about.html">About & Access</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Accessibility</h4>
+                    <ul>
+                        <li><a href="about.html#transcripts">Transcripts</a></li>
+                        <li><a href="about.html#captions">Captions</a></li>
+                        <li><a href="about.html#keyboard-nav">Keyboard Navigation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 StoryCast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

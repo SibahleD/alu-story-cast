@@ -1,0 +1,28 @@
+// Spacing scale
+$space-1: 0.25rem;  // 4px
+$space-2: 0.5rem;   // 8px
+$space-3: 0.75rem;  // 12px
+$space-4: 1rem;     // 16px
+$space-5: 1.5rem;   // 24px
+$space-6: 2rem;     // 32px
+$space-7: 2.5rem;   // 40px
+$space-8: 3rem;     // 48px
+$space-9: 4rem;     // 64px
+$space-10: 5rem;    // 80px
+$space-12: 6rem;    // 96px
+$space-16: 8rem;    // 128px
+
+// Component spacing
+$section-padding-mobile: $space-8 $space-4;
+$section-padding-tablet: $space-10 $space-6;
+$section-padding-desktop: $space-12 $space-8;
+
+// Container spacing
+$container-padding-mobile: $space-4;
+$container-padding-tablet: $space-6;
+$container-padding-desktop: $space-8;
+
+// Grid gaps
+$grid-gap-sm: $space-4;
+$grid-gap-md: $space-6;
+$grid-gap-lg: $space-8;

@@ -1,0 +1,102 @@
+// Screen reader only
+.sr-only {
+  @include sr-only;
+}
+
+// Text alignment
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Spacing utilities
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: $space-1; }
+.mt-2 { margin-top: $space-2; }
+.mt-3 { margin-top: $space-3; }
+.mt-4 { margin-top: $space-4; }
+.mt-5 { margin-top: $space-5; }
+.mt-6 { margin-top: $space-6; }
+.mt-8 { margin-top: $space-8; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: $space-1; }
+.mb-2 { margin-bottom: $space-2; }
+.mb-3 { margin-bottom: $space-3; }
+.mb-4 { margin-bottom: $space-4; }
+.mb-5 { margin-bottom: $space-5; }
+.mb-6 { margin-bottom: $space-6; }
+.mb-8 { margin-bottom: $space-8; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: $space-1; }
+.p-2 { padding: $space-2; }
+.p-3 { padding: $space-3; }
+.p-4 { padding: $space-4; }
+.p-5 { padding: $space-5; }
+.p-6 { padding: $space-6; }
+.p-8 { padding: $space-8; }
+
+// Display utilities
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.d-none { display: none; }
+
+@include tablet {
+  .d-md-block { display: block; }
+  .d-md-inline { display: inline; }
+  .d-md-inline-block { display: inline-block; }
+  .d-md-flex { display: flex; }
+  .d-md-grid { display: grid; }
+  .d-md-none { display: none; }
+}
+
+// Flex utilities
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+// Color utilities
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-muted { color: $text-muted; }
+.text-success { color: $success; }
+.text-warning { color: $warning; }
+.text-error { color: $error; }
+
+.bg-primary { background-color: $background-primary; }
+.bg-secondary { background-color: $background-secondary; }
+.bg-accent { background-color: $background-accent; }
+
+// High contrast adjustments
+@include high-contrast {
+  .story-card {
+    border: 2px solid $text-primary;
+  }
+  
+  .btn {
+    border: 2px solid currentColor;
+  }
+  
+  .media-player__btn {
+    border: 1px solid white;
+  }
+}
